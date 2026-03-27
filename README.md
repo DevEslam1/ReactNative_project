@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
+<div align="center">
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 🌟 React Native Auth Flow
 
-## Get started
+*A beautifully designed, seamless authentication UI for modern React Native apps.*
 
-1. Install dependencies
+[![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
+[![Expo](https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
 
-   ```bash
-   npm install
-   ```
+</div>
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🚀 Overview
 
-In the output, you'll find options to open the app in a
+This app features a fully functional, aesthetically pleasing Authentication flow built with Expo and React Native. It showcases best practices for structuring auth components, sharing styles, and maintaining state.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## ✨ Key Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **🔐 Login Screen:** A clean, gradient-based UI to handle user sign-in.
+- **📝 Sign Up Screen:** An intuitive interface for creating a new account, perfectly integrated with the login flow.
+- **⚡ Seamless Navigation:** Root-level state navigation powered by `SafeAreaProvider`, ensuring zero layout flashing during screen transitions.
+- **🎨 DRY Shared Styles:** Extracted authentication styles into a standalone file (`login_style.js`) for better maintainability.
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 📂 Project Structure
 
-```bash
-npm run reset-project
+We follow a clean, feature-driven folder architecture:
+
+```text
+📦 features
+ ┗ 📂 auth
+   ┣ 📜 index.js         # Exports components cleanly
+   ┣ 📜 login_page.js    # Login UI Layout
+   ┣ 📜 signup_page.js   # Sign Up UI Layout
+   ┗ 📜 login_style.js   # Shared authentication stylesheet
+📜 App.js                # App entry point & Routing
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🛠️ Getting Started
 
-To learn more about developing your project with Expo, look at the following resources:
+### 1️⃣ Install Dependencies
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm install
+```
 
-## Join the community
+### 2️⃣ Start the Application
 
-Join our community of developers creating universal apps.
+Launch the Expo development server:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx expo start
+```
+
+*Scan the QR code printed in the terminal with the **Expo Go** app on your phone to view it instantly!*
+
+---
+
+## 📱 Tech Stack
+
+- **[React Native Safe Area Context](https://docs.expo.dev/versions/latest/sdk/safe-area-context/)** - For handling device notches and safe areas gracefully.
+- **[Expo Linear Gradient](https://docs.expo.dev/versions/latest/sdk/linear-gradient/)** - For rendering smooth, immersive background gradients.
+
+---
+
+<div align="center">
+  <i>Ready for further development! 🚀</i>
+</div>
